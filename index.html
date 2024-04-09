@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up to Dribbble</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="artwork">
+                <!-- Your artwork image goes here -->
+                <img src="./img/home.jpg" alt="home image">
+            </div>
+            <div class="Sign-in">
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+            <div class="form-container">
+                <h2>Sign up to Dribbble</h2>
+                <p class="error-message" id="username-error">Username should be
+                    unique.</p>
+                <form id="signup-form">
+                    <div class="username">
+                        <div class="input-group">                                                                                               
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="username"><b>Username</b></label>
+                            <input type="text" id="username" name="username"
+                                required>
+
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password"><b>Password</b></label>
+                        <input type="password" id="password" name="password"
+                            minlength="6" placeholder="6+ Characters" required>
+                    </div>
+                    <div class="input-group flex-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms"
+                            style="font-size: 15px; color: rgb(123, 121, 121);">Creating
+                            an Account means you're okay with out <span
+                                style="color: rgb(77, 77, 156); cursor: pointer;">terms of
+                                Service, Privacy Policy</span>. And Our Default
+                            Notification Setting. </label>
+                    </div>
+                    <button type="submit" id="submit-btn">Create
+                        Account</button>
+                </form>
+                <p style="color: rgb(127, 126, 124); font-size: 13px;">This site
+                    is protected by reCaptcha and Google <span
+                        style="color: rgb(77, 77, 173);cursor: pointer;">Privacy
+                        Policy </span> and <span
+                        style="cursor: pointer;color: rgb(77, 77, 173);">Terms
+                        of Service</span> apply.
+                </p>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

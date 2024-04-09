@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 1px 0;
+    margin-bottom: 10vh;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust size as needed */
+    margin-left: -40vh;
+
+}
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h5{
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #727272;
+
+}
+
+.avatar-section,
+.location-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.location-section input[type="text"] {
+    padding: 10px 0;
+    font-size: 16px;
+    width: 70vh;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid #888888;
+    outline: none; /* Optional: remove default outline */
+}
+
+
+.avatar-upload label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: start;
+}
+
+.avatar-preview {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    margin-right: 20vh;
+    margin:-20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.avatar-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button {
+    padding: 10px 80px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4f4f;
+}
+
+
+/* -------css for exploration page-------------------------------- */
+
+.material-symbols-outlined{
+    font-size: 20px;
+    color: #0c0c0c;
+    margin-left: 10vh;
+    background-color: #dddada;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.iteams {
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.card {
+    position: relative;
+    width: 230px; /* Set fixed width for the card */
+    min-height: 210px; /* Set fixed height for the card */
+    background-color: #ffffff;
+    border-radius: 10px;
+    border:2px solid rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: -20px;
+    display: inline-block; /* Ensure cards are displayed inline */
+    vertical-align: top; /* Align cards to the top */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.card img {
+    width: 120px; /* Set fixed width for the image */
+    height: 120px; /* Set fixed height for the image */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add margin to separate image from text */
+    
+}
+
+.card p {
+    font-size: 18px;
+    color: #333333;
+    margin-top: -10px;
+}
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid #d6d6d6;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #ff6b81;
+}
+.checkbox-container input:checked ~ .card {
+    border-color: #ff6b81; /* Change border color when checkbox is checked */
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.card-description {
+    display: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: #b8b8b8;
+    
+}

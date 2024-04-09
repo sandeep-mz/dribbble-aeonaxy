@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome! Let's create your profile</title>
+        <link rel="stylesheet" href="../components/wel.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="../img/dribble.svg" alt="Logo">
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="welcome-section">
+                <h1>Welcome! Let's create your profile</h1>
+                <p style="color: rgb(121, 121, 122);">Let others get to know you better! You can do these later</p>
+                <div class="avatar-section">
+                    <h2>Add an avatar</h2>
+                    <div class="avatar-upload">
+                        <label for="avatar-upload"style="display: flex; margin-left: 10vh;">
+                            <input type="file" id="avatar-upload"accept="image/*">
+                            <div class="avatar-preview">
+                                <img src="../img/profile.png" alt="Avatar Preview">
+                            </div>
+                            <div style="margin-left: 10vh;">
+                                <h5>Choose image</h5>
+                                <p style="color: rgb(121, 121, 122); font-size: smaller;" >> Or Defaults img will show</p>
+                            </div>
+                        </label>
+                        
+                    </div>
+                </div>
+                <div class="location-section">
+                    <h2>Add your location</h2>
+                    <input type="text" id="location" name="location" placeholder="Enter a location" required>
+                </div>
+                <button id="next-button">Next</button>
+            </div>
+            <div style="margin-top: 10px; color: rgb(143, 143, 143); font-size: 13px; ">
+                <a href="../index.html" style="text-decoration: none;"> or Press Return</a>
+            </div>
+        </div>
+
+        <script src="../components/wel.js"></script>
+    </body>
+</html>
