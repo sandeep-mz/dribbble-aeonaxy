@@ -67,7 +67,7 @@ h2 {
 
 
 .avatar-upload label {
-    display: block;
+    display: flex;
     margin-bottom: 10px;
     cursor: pointer;
     align-items: center;
@@ -229,4 +229,137 @@ button:hover {
     font-weight: 300;
     color: #b8b8b8;
     
+}
+.t44{
+    
+    margin-left: 10vh;
+}
+.avatar-upload{
+    display: flex; 
+    margin-left: 10vh;
+}
+.p1{
+    padding-left:  35vh; 
+}
+.o11{
+    color: rgb(121, 121, 122); padding-left:  18vh;
+}
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        background-color: #ffffff; /* Set background color */
+        padding: 2px 8px; /* Add padding for content */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between; /* Align items horizontally */
+        align-items: center; /* Align items vertically */
+        /* max-width: 1200px; Limit width of container */
+        margin: 0 auto; 
+    }
+    
+    .logo img {
+        height: 20px; /* Adjust logo height */
+    }
+    
+    .logo a {
+        font-size: 10px; /* Adjust font size */
+        margin-left: 55px; /* Add spacing between logo and chevron */
+    }
+    
+    .material-symbols-outlined {
+        font-size: 14px; /* Adjust chevron size */
+    }
+    .container1 {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto; /* Center the container */
+    }
+    
+    .welcome-section1 {
+        max-width: 600px; /* Limit width of the welcome section */
+        margin: 0 auto; /* Center the section */
+    }
+    
+    .p1 {
+        font-size: 24px; /* Adjust heading font size */
+        padding-left: 20px; /* Center align the heading */
+    }
+    
+    .o11 {
+        font-size: 12px; /* Adjust paragraph font size */
+       padding-left: 20px;
+    }
+
+    .v11{
+        margin-bottom: 50px;
+        font-size: 12px;
+    }
+    
+    .iteams {
+        display: flex;
+        flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+        justify-content: center; /* Center align items */
+    }
+    
+    .card {
+        width: 100%; /* Ensure cards take full width */
+        max-width: 170px; /* Limit maximum width of cards */
+        margin: 10px; /* Add space between cards */
+    }
+    #finish-button{
+        margin-top: -35px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    .container {
+        max-width: 250px;
+
+        padding: 0;
+    }
+    .location-section input[type="text"] {
+        padding: 2px 0;
+        font-size: 12px;
+        width: 35vh;
+    }
+    h2 {
+        
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .navbar{
+        margin-bottom: 10px;
+    }
+    .avatar-preview{
+        margin-top: 20px;
+        /* margin-left: 10px; */
+    }
+    .avatar-preview img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;  
+    }
+    .t44{
+        display: block;
+        margin-left: -25px;
+    }
+    .avatar-upload label{
+        display: block;
+        /* margin-left: -10px; */
+    }
+    .logo img{
+        margin-left: 5px;
+        width: 70px;
+        height: 50px;
+    }
+   
 }

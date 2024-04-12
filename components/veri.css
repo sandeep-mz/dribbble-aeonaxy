@@ -21,6 +21,7 @@ body {
 }
 
 .logo img {
+    display: block;
     height: 30px;
 }
 
@@ -117,7 +118,58 @@ body {
     background-color: #ff4f4f;
 }
 
+.toggle-button{
+    display: none;
+}
 
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
+    .nav-links li {
+        margin-top: 10px;
+    }
+    .search-box,.profile-icon, .upload-button{
+        display: none;
+    }
+    
+    .toggle-button{
+        display: block;
+        padding: 4px 12px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    }
+    .nav-links {
+        display: none; /* Hide the navigation links by default */
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        padding: 10px;
+        background-color: #ffffff;
+        width: 90%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+    }
+
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active a {
+        font-size: 16px;
+    }
+
+    /* Add more styles as needed for responsiveness */
+}
 
 
 
@@ -269,21 +321,45 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .line {
     border-top: 1px solid #ccc;
     margin-top: 20px; /* Adjust as needed */
     margin-bottom: 20px; /* Adjust as needed */
     margin-left: 60px;
     margin-right: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-links{
+        display: block;
+        
+    }
+    .footer-column1{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-info{
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-info p{
+        margin-left: 80px;
+        margin-bottom: 5px;
+        color: #999;
+        font-size: 10px;
+    }
+    .line {
+        margin-left: 30px;
+        margin-right: 10%;
+    }
+    .u11{
+        margin-right: 70px;
+    }
 }

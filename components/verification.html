@@ -16,6 +16,7 @@
             <div class="logo">
                 <img src="../img/dribble.svg" alt="Logo">
             </div>
+            
             <ul class="nav-links">
                 <li><a href="#">Inspiration</a></li>
                 <li><a href="#">Find Work</a></li>
@@ -37,6 +38,9 @@
                     <img src="../img/profile.png" alt="Avatar Preview">
                 </div>
                 <button class="upload-button">Upload</button>
+                <button class="toggle-button" onclick="toggleNav()">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -159,7 +163,7 @@
         <hr class="line">
         <div class="footer-info">
             <p>© 2023 Dribbble. All rights reserved.</p>
-            <div style="display: flex; align-items: center; justify-content: center;">
+            <div  class="u11" style="display: flex; align-items: center; justify-content: center;">
                 <p>20,501,853 shots dribbbled</p>
                 <img src="../img/icons8-dribble.svg" alt="dribbbled" style="height: 25px; width: 25px;margin-top: 8px; margin-left: 2px;">
             </div>
@@ -167,6 +171,11 @@
     </footer>
     
     <script>
+        function toggleNav() {
+        var navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+}
+
 
     </script>
 </body>
