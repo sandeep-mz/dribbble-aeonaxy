@@ -14,7 +14,7 @@ body {
   }
   
   .artwork {
-    position: absolute;
+    
     display: flex;
     height: 100vh;
     width: 50vw;
@@ -29,7 +29,7 @@ body {
     gap: 80px;
   }
   .form-container {
-    position: relative;
+    
     width: 400px;
     margin-left: -100px;
   }
@@ -114,6 +114,9 @@ body {
   
   /* ---------------------------- */
   @media only screen and (max-width: 768px) {
+    .form-container {
+      position: relative;
+    }
     .container {
       display: block;
     }
